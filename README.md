@@ -1,29 +1,25 @@
-### py_sg
+# py3_sg
 
-Version 0.13
+## Python3 SCSI generic library  
 
-This is a fork of Dan Lenski's SCSI library, rewritten to be compatible with **Python3**
+This is a fork of [crypto-universe/py_sg](https://github.com/crypto-universe/py_sg).  
 
-### How to install
 
-1. Clone this repo;
-2. Enter the folder
-3. Try to compile:
+## Install
+
+```shell
+sudo python3 -m pip install py3_sg
 ```
+
+
+## How to install manually
+
+```shell
+git clone https://github.com/7aman/py3_sg.git
+cd py3_sg
 python3 setup.py build
 ```
-4. If .so library is compiled, install:
+If .so library is compiled, install:
+```shell
+sudo python3 setup.py install
 ```
-sudo python3 -m pip install <path/to/setup.py>
-```
-5. You are done
-
-### Changelog
-
-Version 0.13 - **breaking** change in API - split read function into 2. Get rid of deprecated function.
-
-Version 0.12 - migrate to Python3, one deprecated function used
-
-Version 0.11 - original
-
-

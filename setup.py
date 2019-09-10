@@ -1,24 +1,29 @@
 #!/usr/bin/env python3
+from setuptools import setup, Extension
 
-from distutils.core import setup, Extension
-setup(name = "py_sg",
-      version = "0.13",
-      ext_modules=[
-        Extension("py_sg", ["py_sg.c"])
-        ],
 
-      description = 'Python SCSI generic library',
-      long_description =
-'''This is a small Python extension which sends arbitrary commands to SCSI devices, via the Linux SCSI Generic driver, which provides the SG_IO ioctl for this purpose.
+__version__ = '0.0.1'
 
+long_description = '''
+This is a small Python3 extension which sends arbitrary commands to SCSI devices, via the Linux SCSI Generic driver, which provides the SG_IO ioctl for this purpose.
 Basically, the module includes three methods to read and write, which
 allow you to issue commands to SCSI devices and read and write
 accompanying data. If an OS error occurs, the OSError exception will
-be raised, while if a SCSI error occurs, the py_sg.SCSIError exception
-will be raised.''',
-      author = 'Dan Lenski',
-      author_email = 'dlenski@gmail.com',
-      url = 'http://tonquil.homeip.net/~dlenski/py_sg',
+be raised, while if a SCSI error occurs, the py3_sg.SCSIError exception
+will be raised.
+'''
+
+setup(
+      name = "py3_sg",
+      version = __version__,
+      ext_modules=[
+        Extension("py3_sg", ["src/py3_sg.c"])
+        ],
+      description = 'Python3 SCSI generic library',
+      long_description = long_description,
+      author = 'Zaman',
+      author_email = '7amaaan@gmail.com',
+      url = 'https://github.com/7aman/py3_sg',
       license = 'GPLv3',
       classifiers = ['Topic :: System :: Hardware'],
 )                                                                                                  
