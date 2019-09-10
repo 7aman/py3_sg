@@ -7,6 +7,9 @@ This is a fork of [crypto-universe/py_sg](https://github.com/crypto-universe/py_
 
 ## Install
 
+Dependencies:
+- `<Python.h>` header file. (`python3-dev` or `python3-devel`)
+
 ```shell
 sudo python3 -m pip install py3_sg
 ```
