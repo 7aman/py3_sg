@@ -2,7 +2,7 @@
 from setuptools import setup, Extension
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 long_description = '''
 This is a small Python3 extension which sends arbitrary commands to SCSI devices, via the Linux SCSI Generic driver, which provides the SG_IO ioctl for this purpose.
@@ -26,4 +26,4 @@ setup(
       url = 'https://github.com/7aman/py3_sg',
       license = 'GPLv3',
       classifiers = ['Topic :: System :: Hardware'],
-)                                                                                                  
+)
