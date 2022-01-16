@@ -1,5 +1,8 @@
 # py3_sg
 
+**Active Status [Jan 2022]: This repositoy is not maintained anymore and will be removed soon. Please refer to original repo by [crypto-universe/py_sg](https://github.com/crypto-universe/py_sg) for latest changes.**
+
+
 ## Python3 SCSI generic library  
 
 This is a fork of [crypto-universe/py_sg](https://github.com/crypto-universe/py_sg).  
